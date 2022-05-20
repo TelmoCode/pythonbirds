@@ -10,7 +10,7 @@ class Pessoa:
         return f'olá {id(self)}'
 
 if __name__ == '__main__':
-    p = Pessoa('Angelina')
+    p = Pessoa('Clara')
     print(Pessoa.cumprimentar(p))
     print(dir(p))
     print(p.cumprimentar())

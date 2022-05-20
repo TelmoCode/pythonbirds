@@ -15,6 +15,6 @@ if __name__ == '__main__':
     print(dir(p))
     print(p.cumprimentar())
     print(p.nome)
-    p.nome = 'Telmo'
+    p.nome = 'Sophia'
     print(p.nome)
 

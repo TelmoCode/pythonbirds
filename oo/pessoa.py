@@ -19,7 +19,13 @@ if __name__ == '__main__':
     print(angelina.cumprimentar())
     print(angelina.nome)
     print(angelina.idade)
-    for filha in angelina.filhos:
-        print(filha)
+    for filho in angelina.filhos:
+        print(filho.nome)
+    angelina.sobrenome = 'Ferreira'
+    print(angelina.__dict__)
+    print(sophia.__dict__)
+    del angelina.filhos
+    print(angelina.__dict__)
+    print(sophia.__dict__)
 
 

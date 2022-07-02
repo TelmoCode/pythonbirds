@@ -1,3 +1,6 @@
+
+
+
 """
 Vodê deve cria uma classe que vai possuir
 dois atributos compostos por outras duas classes:
@@ -21,7 +24,8 @@ O   L
   S
 
     Exemplo
-    >>> motor = motor()
+    >>># testado o motor
+    >>> motor = Motor()
     >>> motor.velocidade()
     0
     >>> motor.acelerar()
@@ -41,7 +45,7 @@ O   L
     0
     >>># testando direção
 
-    >>>direcao = direcao()
+    >>>direcao = Direcao()
     >>>direcao.valor()
     'Norte'
     >>>direcao.virar_a_direita()
@@ -94,5 +98,13 @@ O   L
     >>> carro.virar_a_esquerda()
     >>> carro.calcular_direcao()
     'Norte'
-
 """
+
+class Carro:
+    pass
+
+class Motor:
+    pass
+
+class Direcao:
+    pass

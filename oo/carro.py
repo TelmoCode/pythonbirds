@@ -1,6 +1,4 @@
 
-
-
 """
 Vodê deve cria uma classe que vai possuir
 dois atributos compostos por outras duas classes:
@@ -24,53 +22,53 @@ O   L
   S
 
     Exemplo
-    >>># testado o motor
+    >>> # testado o motor
     >>> motor = Motor()
-    >>> motor.velocidade()
+    >>> motor.velocidade
     0
     >>> motor.acelerar()
-    >>> motor.velocidade()
+    >>> motor.velocidade
     1
     >>> motor.acelerar()
-    >>> motor.velocidade()
+    >>> motor.velocidade
     2
     >>> motor.acelerar()
-    >>> motor.velocidade()
+    >>> motor.velocidade
     3
     >>> motor.frear()
-    >>> motor.velocidade()
+    >>> motor.velocidade
     1
     >>> motor.frear()
-    >>> motor.velocidade()
+    >>> motor.velocidade
     0
-    >>># testando direção
+    >>> # testando direção
 
-    >>>direcao = Direcao()
-    >>>direcao.valor()
+    >>> direcao = Direcao()
+    >>> direcao.valor
     'Norte'
-    >>>direcao.virar_a_direita()
-    >>>direcao.valor()
+    >>> direcao.virar_a_direita()
+    >>> direcao.valor
     'Leste'
-    >>>direcao.virar_a_direita()
-    >>>direcao.valor()
+    >>> direcao.virar_a_direita()
+    >>> direcao.valor
     'Sul'
-    >>>direcao.virar_a_direita()
-    >>>direcao.valor()
+    >>> direcao.virar_a_direita()
+    >>> direcao.valor
     'Oeste'
-    >>>direcao.virar_a_direita()
-    >>>direcao.valor()
+    >>> direcao.virar_a_direita()
+    >>> direcao.valor
     'Norte'
-    >>>direcao.virar_a_esquerda()
-    >>>direcao.valor()
+    >>> direcao.virar_a_esquerda()
+    >>> direcao.valor
     'Oeste'
-    >>>direcao.virar_a_direita()
-    >>>direcao.valor()
+    >>> direcao.virar_a_direita()
+    >>> direcao.valor
     'Sul'
-    >>>direcao.virar_a_direita()
-    >>>direcao.valor()
+    >>> direcao.virar_a_direita()
+    >>> direcao.valor
     'Leste'
-    >>>direcao.virar_a_direita()
-    >>>direcao.valor()
+    >>> direcao.virar_a_direita()
+    >>> direcao.valor
     'Norte'
     >>> carro = Carro(direcao, motor)
     >>> carro.calcular_velocidade()
@@ -101,9 +99,19 @@ O   L
 """
 
 class Carro:
-    pass
+    def calcular_velocidade(self):
+        pass
 
 class Motor:
+    def __init__(self):
+        self.velocidade = 0
+
+    def acelerar(self):
+        self.velocidade += 1
+
+    def frear(self):
+        self.velocidade -= 2
+
     pass
 
 class Direcao:

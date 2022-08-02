@@ -1,4 +1,5 @@
 
+
 """
 Vodê deve cria uma classe que vai possuir
 dois atributos compostos por outras duas classes:
@@ -98,21 +99,7 @@ O   L
     'Norte'
 """
 
-class Carro:
-    def calcular_velocidade(self):
-        pass
 
 class Motor:
     def __init__(self):
         self.velocidade = 0
-
-    def acelerar(self):
-        self.velocidade += 1
-
-    def frear(self):
-        self.velocidade -= 2
-
-    pass
-
-class Direcao:
-    pass

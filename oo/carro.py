@@ -98,8 +98,49 @@ O   L
     >>> carro.calcular_direcao()
     'Norte'
 """
+NORTE = 'Norte'
+SUL = 'Sul'
+LESTE = 'Leste'
+OESTE = 'OESTE'
+class Direcao:
+    def __init__(self):
+        self.valor = NORTE
+
+    def virar_a_direita(self):
+        if self.valor == NORTE:
+            self.valor = LESTE
+        elif self.valor == LESTE:
+            self.valor = SUL
+        elif self.valor == SUL:
+            self.valor = OESTE
+        elif self.valor == OESTE:
+            self.valor = NORTE
+
+
+
+    def virar_a_esquerda(self):
+
+        if self.valor == NORTE:
+            self.valor = OESTE
+        elif self.valor == OESTE:
+            self.valor = SUL
+        elif self.valor == SUL:
+            self.valor = LESTE
+        elif self.valor == LESTE:
+            self.valor = NORTE
+
+
+
+
 
 
 class Motor:
     def __init__(self):
         self.velocidade = 0
+
+    def acelerar(self):
+        self.velocidade += 1
+
+    def frear(self):
+        self.velocidade -= 2
+        self.velocidade = max(0, self.velocidade)
